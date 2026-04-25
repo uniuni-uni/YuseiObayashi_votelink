@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover; /* 画面いっぱいに表示 */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="top.png" alt="Loading...">
+
+    <script>
+        // 表示時間（1000 = 1秒）
+        const displayTime = 800; 
+        const redirectUrl = "https://vote.produce101.jp";
+
+        setTimeout(() => {
+            window.location.href = redirectUrl;
+        }, displayTime);
+    </script>
+</body>
+</html>
